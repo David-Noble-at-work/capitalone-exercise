@@ -5,14 +5,53 @@ Sierra and is [mypy](https://goo.gl/Un5F1A) 0.511 clean. The command line interf
 the Python 3.6 interpreter is on your path, run this command from the capitalone-exercise directory to get help:
 
 ```bash
-python capitalone.py --help
+python3.6 capitalone.py --help
 ```
 
-Execute this command to run the capitalone tests:
-
+**Example 1:**
 ```bash
-python -m pytest test
+# Produce unfiltered income and expense report
+python3.6 capitalone.py --email interview@levelmoney.com --password password2
 ```
+
+*Output:* 
+
+A single JSON document of income and expenses as documented in `Coding-exercise-instructions.md`.
+
+**Example 2:**
+```bash
+# Produce income and expense report that excludes expenses (or--theoretically--income earned) on donuts
+python3.6 capitalone.py --email interview@levelmoney.com --password password2 --ignore-donuts
+```
+
+*Output:* 
+
+A single JSON document of income and expenses as documented in `Coding-exercise-instructions.md`.
+
+**Example 3:**
+```bash
+# Produce income and expense report that excludes credit card payments
+python3.6 capitalone.py --email interview@levelmoney.com --password password2 --ignore-cc-payments
+```
+
+*Output:* 
+
+A single JSON document with two fields: `income-and-expenses` and `cc-payments`. The `income-and-expenses` field
+is formatted as documented in `Coding-exercise-instructions.md`. The `cc-payments` field lists all credit card
+transactions that were ignored.
+
+**Example 4:**
+```bash
+# Produce income and expense report that excludes credit card payments and donut expenses
+python3.6 capitalone.py --email interview@levelmoney.com --password password2 --ignore-cc-payments --ignore-donuts
+```
+
+*Output:* 
+
+A single JSON document with two fields: `income-and-expenses` and `cc-payments`. The `income-and-expenses` field
+is formatted as documented in `Coding-exercise-instructions.md`. The `cc-payments` field lists all credit card
+transactions that were ignored.
+
 ## Requirements
 
 This module requires Python 3.6 and these packages:
@@ -25,6 +64,8 @@ This module requires Python 3.6 and these packages:
 The setup instructions depend on your platform and its package manager.
 
 ### On Debian 8.8
+
+**TODO:** Test these instructions.
 
 ```bash
 sudo apt update
@@ -60,6 +101,8 @@ sudo port install python36
 sudo python3.6 -m ensurepip
 sudo python3.6 -m pip install pytest requests
 ```
+
+Please note that David Noble is a Mac Ports user but that the homebrew instructions *should* be a good approximation.
 
 ### On Windows 10
 

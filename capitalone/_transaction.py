@@ -1,6 +1,7 @@
 # Copyright © David Noble. All Rights Reserved.
 
 from typing import Any, Mapping
+from datetime import datetime
 
 
 class Transaction(object):
@@ -15,6 +16,8 @@ class Transaction(object):
 
     def __str__(self):
         return str(self._transaction)
+
+    # region Properties
 
     @property
     def amount(self):
@@ -55,3 +58,17 @@ class Transaction(object):
     @property
     def transaction_time(self):
         return self._transaction['transaction-time']
+
+    # endregion
+
+    # region Methods
+
+    @staticmethod
+    def to_datetime(value: str) -> datetime:
+        return datetime.strptime(value, '%Y-%m-%dT%H:%M:%S.%fZ')
+
+    def to_dict(self) -> Mapping[str, Any]:
+        return self._transaction
+
+    # endregion
+    pass
