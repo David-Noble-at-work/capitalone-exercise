@@ -5,14 +5,27 @@ Sierra and is [mypy](https://goo.gl/Un5F1A) 0.511 clean. The command line interf
 the Python 3.6 interpreter is on your path, run this command from the capitalone-exercise directory to get help:
 
 ```bash
-python capitalone.py --help
+python3.6 capitalone.py --help
 ```
 
-Execute this command to run the capitalone tests:
-
+**Example 1:**
 ```bash
-python -m pytest test
+# Produce unfiltered income and expense report
+python3.6 capitalone.py --email interview@levelmoney.com --password password2
 ```
+
+**Example 2:**
+```bash
+# Produce income and expense report that excludes expenses (or--theoretically--income earned) on donuts
+python3.6 capitalone.py --email interview@levelmoney.com --password password2 --ignore-donuts
+```
+
+**Example 3:**
+```bash
+# Produce income and expense report that excludes credit card payments
+python3.6 capitalone.py --email interview@levelmoney.com --password password2 --ignore-cc-payments
+```
+
 ## Requirements
 
 This module requires Python 3.6 and these packages:

@@ -30,8 +30,8 @@ def argument_parser() -> ArgumentParser:
         fromfile_prefix_chars='@'
     )
 
-    parser.add_argument('--email', required=True)
-    parser.add_argument('--password', required=True)
+    parser.add_argument('--email', metavar='<email-address>', required=True)
+    parser.add_argument('--password', metavar='<password>', required=True)
     parser.add_argument('--crystal-ball', action='store_true')
     parser.add_argument('--ignore-cc-payments', action='store_true')
     parser.add_argument('--ignore-donuts', action='store_true')
@@ -49,6 +49,11 @@ if __name__ == '__main__':
     account.login(arguments.email, arguments.password)
 
     transactions = account.get_all_transactions()
-    report = transactions.compute_income_and_expenses()
 
+    # Strategy: compose filters over a sequence of transactions and then report on them
+
+    if arguments.ignore_donuts:
+        transactions = filter(lambda t: t.merchant not in ['Krispy Kreme Donuts', 'DUNKIN #336784'], transactions)
+
+    report = capitalone.compute_income_and_expenses(transactions)
     json.dump(report, sys.stdout, indent=2)
