@@ -1,6 +1,6 @@
 # Copyright © David Noble. All Rights Reserved.
 
-from typing import Any, Dict, Sequence, Tuple
+from typing import Any, Dict, Mapping, Sequence, Tuple
 from datetime import datetime
 from ._income_and_expense import IncomeAndExpense
 from ._transaction import Transaction
@@ -19,7 +19,22 @@ class TransactionCollection(Sequence[Transaction]):
     def __len__(self) -> int:
         return len(self._transactions)
 
-    def compute_income_and_expenses(self):
+    def compute_income_and_expenses(self) -> Mapping[str, Mapping[str, str]]:
+        """ Computes income and expenses by month for the current transaction collection
+
+        Missing months are not represented, but are factored into the average for the period of time covered by the
+        current transaction collection. For example, if the period starts in January of one year and ends in December
+        of the following year, the period covers 24 months. 24 is  used as the denominator for the average for this
+        two year period even when months are missing. This might happen for example when a customer decides not to use
+        their account in some months.
+
+        :return: Monthly income and expense items including an `"average"` over the full period. Income and expense
+        items are ordered and keyed by date strings of the form `'YYYY-DD'`. Income and expense items are represented
+        as mappings of the form `{"spent": "$<dollars>.<cents>", "income": "$<dollars>.<cents>"}`.
+
+        Example
+
+        """
 
         start = (datetime.max.year, datetime.max.month)
         end = (datetime.min.year, datetime.min.month)
