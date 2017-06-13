@@ -32,6 +32,9 @@ def argument_parser() -> ArgumentParser:
 
     parser.add_argument('--email', required=True)
     parser.add_argument('--password', required=True)
+    parser.add_argument('--crystal-ball', action='store_true')
+    parser.add_argument('--ignore-cc-payments', action='store_true')
+    parser.add_argument('--ignore-donuts', action='store_true')
 
     return parser
 
