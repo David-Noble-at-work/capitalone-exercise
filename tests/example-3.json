@@ -1,140 +1,140 @@
 {
   "income-and-expenses": {
     "2014-10": {
-      "spent": "$414018.96",
-      "income": "$1447303.93"
+      "spent": "$414928.38",
+      "income": "$1450733.72"
     },
     "2014-11": {
-      "spent": "$850939.27",
-      "income": "$1359804.03"
+      "spent": "$852949.19",
+      "income": "$1363234.09"
     },
     "2014-12": {
-      "spent": "$1002428.88",
-      "income": "$1307394.29"
+      "spent": "$1004920.5",
+      "income": "$1310829.16"
     },
     "2015-01": {
-      "spent": "$594406.82",
-      "income": "$1245652.84"
+      "spent": "$595908.25",
+      "income": "$1249059.37"
     },
     "2015-02": {
-      "spent": "$650885.64",
-      "income": "$1184010.31"
+      "spent": "$652655.17",
+      "income": "$1187427.5"
     },
     "2015-03": {
-      "spent": "$391055.65",
-      "income": "$1141586.67"
+      "spent": "$392083.73",
+      "income": "$1145009.95"
     },
     "2015-04": {
-      "spent": "$258563.81",
-      "income": "$1104299.58"
+      "spent": "$259281.53",
+      "income": "$1107723.81"
     },
     "2015-05": {
-      "spent": "$156694.59",
-      "income": "$1067763.74"
+      "spent": "$157103.02",
+      "income": "$1071180.14"
     },
     "2015-06": {
-      "spent": "$467613.1",
-      "income": "$1013428.07"
+      "spent": "$469079.06",
+      "income": "$1016826.85"
     },
     "2015-07": {
-      "spent": "$479193.78",
-      "income": "$978493.17"
+      "spent": "$480730.72",
+      "income": "$981890.9"
     },
     "2015-08": {
-      "spent": "$180411.04",
-      "income": "$925802.41"
+      "spent": "$180951.52",
+      "income": "$929187.29"
     },
     "2015-09": {
-      "spent": "$159125.23",
-      "income": "$888277.2"
+      "spent": "$159590.32",
+      "income": "$891680.47"
     },
     "2015-10": {
-      "spent": "$235873.67",
-      "income": "$419052.92"
+      "spent": "$236701.54",
+      "income": "$420770.35"
     },
     "2015-11": {
-      "spent": "$208422.16",
-      "income": "$804002.75"
+      "spent": "$209201.96",
+      "income": "$807461.08"
     },
     "2015-12": {
-      "spent": "$198102.33",
-      "income": "$384802.11"
+      "spent": "$198873.49",
+      "income": "$386527.68"
     },
     "2016-01": {
-      "spent": "$184763.03",
-      "income": "$363645.84"
+      "spent": "$185515.29",
+      "income": "$365369.28"
     },
     "2016-02": {
-      "spent": "$131322.19",
-      "income": "$667934.08"
+      "spent": "$131890.01",
+      "income": "$671385.46"
     },
     "2016-03": {
-      "spent": "$331989.5",
-      "income": "$617973.34"
+      "spent": "$333622.53",
+      "income": "$621359.95"
     },
     "2016-04": {
-      "spent": "$183772.42",
-      "income": "$581014.38"
+      "spent": "$184719.38",
+      "income": "$584412.33"
     },
     "2016-05": {
-      "spent": "$219700.42",
-      "income": "$543304.22"
+      "spent": "$220888.32",
+      "income": "$546775.95"
     },
     "2016-06": {
-      "spent": "$170659.56",
-      "income": "$493050.66"
+      "spent": "$171691.9",
+      "income": "$496458.99"
     },
     "2016-07": {
-      "spent": "$158657.38",
-      "income": "$463556.84"
+      "spent": "$159662.83",
+      "income": "$466965.62"
     },
     "2016-08": {
-      "spent": "$96415.02",
-      "income": "$411728.32"
+      "spent": "$96920.77",
+      "income": "$415131.2"
     },
     "2016-09": {
-      "spent": "$190255.37",
-      "income": "$182989.26"
+      "spent": "$191791.66",
+      "income": "$184699.44"
     },
     "2016-10": {
-      "spent": "$88276.45",
-      "income": "$163974.62"
+      "spent": "$88902.32",
+      "income": "$165665.08"
     },
     "2016-11": {
-      "spent": "$228498.57",
-      "income": "$287355.18"
+      "spent": "$230849.16",
+      "income": "$290797.01"
     },
     "2016-12": {
-      "spent": "$73835.18",
-      "income": "$248122.76"
+      "spent": "$74619.69",
+      "income": "$251569.56"
     },
     "2017-01": {
-      "spent": "$125488.65",
-      "income": "$209201.04"
+      "spent": "$127071.97",
+      "income": "$212687.52"
     },
     "2017-02": {
-      "spent": "$63986.28",
-      "income": "$78553.28"
+      "spent": "$64829.52",
+      "income": "$80260.96"
     },
     "2017-03": {
-      "spent": "$89890.57",
-      "income": "$124908.63"
+      "spent": "$91660.15",
+      "income": "$128379.24"
     },
     "2017-04": {
-      "spent": "$70560.1",
-      "income": "$42771"
+      "spent": "$72750.77",
+      "income": "$44481.84"
     },
     "2017-05": {
-      "spent": "$25902.33",
-      "income": "$36010.1"
+      "spent": "$26727.49",
+      "income": "$39436.77"
     },
     "2017-06": {
-      "spent": "$6303.1",
-      "income": "$3382.34"
+      "spent": "$8229.36",
+      "income": "$5073.51"
     },
     "average": {
-      "spent": "$217200.27",
-      "income": "$519778.74"
+      "spent": "$264463.68",
+      "income": "$633044"
     }
   },
   "cc-payments": [
@@ -10569,6 +10569,34 @@
       "categorization": "Credit Card Payment",
       "merchant": "CC Payment",
       "transaction-time": "2017-05-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CREDIT CARD PAYMENT",
+      "aggregation-time": 1496552643209,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1496467860000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1496467860000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2017-06-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CC PAYMENT",
+      "aggregation-time": 1496552643209,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1496552940000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1496552940000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "CC Payment",
+      "transaction-time": "2017-06-03T00:00:00.000Z"
     },
     {
       "amount": 5194500,

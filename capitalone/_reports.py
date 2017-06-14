@@ -34,19 +34,20 @@ def compute_income_and_expenses(transactions: Iterator[Transaction]) -> Mapping[
         period = (transaction.transaction_time.year, transaction.transaction_time.month)
         amount: int = transaction.amount
 
-        try:
-            value = table[period]
-        except KeyError:
-            value = IncomeAndExpense(spent=0, income=0)
+        if amount != 0:
+            try:
+                value = table[period]
+            except KeyError:
+                value = IncomeAndExpense(spent=0, income=0)
 
-        if amount >= 0:
-            value = IncomeAndExpense(spent=value.spent, income=value.income + amount)
-            total = IncomeAndExpense(spent=total.spent, income=total.income + amount)
-        else:
-            value = IncomeAndExpense(spent=value.spent + amount, income=value.income)
-            total = IncomeAndExpense(spent=total.spent + amount, income=total.income)
+            if amount > 0:
+                value = IncomeAndExpense(spent=value.spent, income=value.income + amount)
+                total = IncomeAndExpense(spent=total.spent, income=total.income + amount)
+            else:
+                value = IncomeAndExpense(spent=value.spent + amount, income=value.income)
+                total = IncomeAndExpense(spent=total.spent + amount, income=total.income)
 
-        table[period] = value
+            table[period] = value
 
         if period < start:
             start = period
@@ -56,7 +57,7 @@ def compute_income_and_expenses(transactions: Iterator[Transaction]) -> Mapping[
     report: Dict[str, Mapping[str, str]] = {
         f'{format(period[0], "04")}-{format(period[1], "02")}': table[period].to_json() for period in table
     }
-    months = 12 * (end[0] - start[0]) + (start[1] - end[1])
+    months = 12 * (end[0] - start[0] - 1) + (13 - start[1] + end[1])
     report['average'] = IncomeAndExpense(spent=total.spent // months, income=total.income // months).to_json()
 
     return report
