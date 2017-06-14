@@ -75,10 +75,10 @@ if __name__ == '__main__':
 
         # Filter on the transactions in a 24-hour time window: Our strategy is to provide a filter over the transactions
         # in a 24-hour time window. The time_window class constructs an iterator that enables a predicate function to
-        # selectively include transactions in the time window. In this exercise transactions are keyed by amount. In a
-        # generalized solution we'd offer up the ability to specify a key or--perhaps--set of keys when constructing
-        # a time window. Note that in this limited implementation one could still examine any or all transaction fields,
-        # just not with the benefit of keyed access.
+        # selectively include transactions in the time window. For the purpose of this exercise transactions are keyed
+        # by amount. In a generalized solution we'd offer up the ability to specify a key or--perhaps--set of keys when
+        # constructing a time window. Note that in this limited implementation one could still examine any or all
+        # transaction fields, just not with the benefit of keyed access.
 
         def ignore(transaction: Transaction, window: Mapping[int, Transaction]) -> Tuple[bool, Optional[Iterator[Transaction]]]:
             try:

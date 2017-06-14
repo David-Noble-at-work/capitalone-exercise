@@ -1,9 +1,10 @@
 # Copyright © David Noble. All Rights Reserved.
 
+from typing import Any, Dict, Mapping, Optional, Tuple, Union, cast
+
 import json
 from copy import deepcopy
 from enum import Enum
-from typing import Any, Dict, Mapping, Optional
 
 from requests import HTTPError, post
 
@@ -20,8 +21,8 @@ class DemoAccountType(Enum):
 class Account(object):
     def __init__(self, demo_account_type: Optional[DemoAccountType] = None) -> None:
 
-        self._endpoints = {}
-        self._uid: str = None
+        self._endpoints: Dict[str, Tuple[str, Dict[str, Any]]] = {}
+        self._uid: int = None
         self._token: str = None
         self._demo_account_type: Optional[DemoAccountType] = demo_account_type
 
@@ -42,8 +43,8 @@ class Account(object):
             )
 
         message = self._post(endpoint, parameters, email=email, password=password)
-        self._uid = message['uid']
-        self._token = message['token']
+        self._uid = cast(int, message['uid'])
+        self._token = cast(str, message['token'])
 
     def get_all_transactions(self) -> TransactionList:
 

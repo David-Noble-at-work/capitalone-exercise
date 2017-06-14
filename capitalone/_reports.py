@@ -24,15 +24,15 @@ def compute_income_and_expenses(transactions: Iterator[Transaction]) -> Mapping[
 
     """
 
+    table: Dict[Tuple[int, int], IncomeAndExpense] = {}
     start = (datetime.max.year, datetime.max.month)
     end = (datetime.min.year, datetime.min.month)
     total = IncomeAndExpense(spent=0, income=0)
-    table: Dict[Tuple[int, int]] = {}
 
     for transaction in transactions:
 
         period = (transaction.transaction_time.year, transaction.transaction_time.month)
-        amount = transaction.amount
+        amount: int = transaction.amount
 
         try:
             value = table[period]
@@ -53,7 +53,9 @@ def compute_income_and_expenses(transactions: Iterator[Transaction]) -> Mapping[
         elif period > end:
             end = period
 
-    report = {f'{format(period[0], "04")}-{format(period[1], "02")}': table[period].to_json() for period in table}
+    report: Dict[str, Mapping[str, str]] = {
+        f'{format(period[0], "04")}-{format(period[1], "02")}': table[period].to_json() for period in table
+    }
     months = 12 * (end[0] - start[0]) + (start[1] - end[1])
     report['average'] = IncomeAndExpense(spent=total.spent // months, income=total.income // months).to_json()
 

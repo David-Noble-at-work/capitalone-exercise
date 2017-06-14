@@ -1,21 +1,25 @@
 # Copyright © David Noble. All Rights Reserved.
 
+from typing import Callable, Iterable, Iterator, List, Mapping, Optional, Sequence, Tuple, cast
 from collections import OrderedDict
 from datetime import timedelta
-from typing import Iterable, Sequence
 
 from ._transaction import Transaction
+
+Predicate = Callable[[Transaction, Mapping[int, Transaction]], Tuple[bool, Optional[Iterator[Transaction]]]]
 
 
 class TimeWindow(Iterable[Transaction]):
 
-    def __init__(self, predicate, interval: timedelta, transactions: Iterable[Transaction]) -> None:
-        self._predicate = predicate
-        self._removals = None
+    __slots__ = ('_interval', '_predicate', '_removals', '_transactions')
+
+    def __init__(self, predicate: Predicate, interval: timedelta, transactions: Iterable[Transaction]) -> None:
         self._interval = interval
+        self._predicate = predicate
+        self._removals: List[Transaction]
         self._transactions = transactions
 
-    def __iter__(self) -> Transaction:
+    def __iter__(self) -> Iterator[Transaction]:
         """ Iterate over the set of transactions that aren't removed based on what `TimeWindow.predicate` returns """
 
         def removed() -> bool:
@@ -27,6 +31,7 @@ class TimeWindow(Iterable[Transaction]):
             """
             remove, correlated_transactions = self._predicate(start, window)
             if remove:
+                correlated_transactions = cast(Iterator[Transaction], correlated_transactions)
                 removals.append(start)
                 for removal in correlated_transactions:
                     window.pop(removal.amount)
@@ -38,14 +43,14 @@ class TimeWindow(Iterable[Transaction]):
         transactions = self._transactions
 
         start = next(iter(transactions), None)
-        removals = []
+        removals: List[Transaction] = []
 
         if start is None:  # there are no transactions
             self._removals = removals
             return
 
         end = next(iter(transactions), None)
-        window = OrderedDict()
+        window: OrderedDict = OrderedDict()
 
         if end is None:  # we've got a single transaction--start
             if not removed():
@@ -94,7 +99,7 @@ class TimeWindow(Iterable[Transaction]):
         return self._interval
 
     @property
-    def predicate(self):
+    def predicate(self) -> Predicate:
         return self._predicate
 
     @property
