@@ -1,5 +1,4 @@
-from ._account import Account
-from ._demo_account_type import DemoAccountType
+from ._account import Account, DemoAccountType
 from ._filters import time_window
 from ._income_and_expense import IncomeAndExpense
 from ._reports import compute_income_and_expenses

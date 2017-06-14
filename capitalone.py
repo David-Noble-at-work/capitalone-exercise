@@ -56,8 +56,9 @@ if __name__ == '__main__':
     transactions = account.get_all_transactions()
 
     # Strategy: Construct a processing pipeline composed of filters over a sequence of transactions and then--at the
-    # end--report on them. In production code we'd formalize the concept of a processing pipeline which could execute
-    # a variety of commands, including--for example--aggregating, filtering, and transforming commands.
+    # end--report on them. In production code we'd formalize the concept of a processing pipeline. We could then
+    # develop and execute a variety of commands, including--for example--aggregating, filtering, and transforming
+    # commands in the pipeline.
 
     if arguments.ignore_donuts:
 

@@ -1,18 +1,24 @@
 # Copyright © David Noble. All Rights Reserved.
 
-from typing import Any, Dict, Mapping, Optional
-
 import json
 from copy import deepcopy
+from enum import Enum
+from typing import Any, Dict, Mapping, Optional
+
 from requests import HTTPError, post
 
-from ._demo_account_type import DemoAccountType
 from ._transaction_list import TransactionList
 
 
-class Account(object):
+class DemoAccountType(Enum):
+    default = 'default'
+    autosave_enabled = 'autosave-enabled'
+    no_savings_account = 'no-savings-account'
+    overspent = 'overspent'
 
-    def __init__(self, demo_account_type: Optional[DemoAccountType]=None) -> None:
+
+class Account(object):
+    def __init__(self, demo_account_type: Optional[DemoAccountType] = None) -> None:
 
         self._endpoints = {}
         self._uid: str = None
