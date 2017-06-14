@@ -5,7 +5,7 @@ from typing import Any, Dict, Sequence
 from ._transaction import Transaction
 
 
-class TransactionCollection(Sequence[Transaction]):
+class TransactionList(Sequence[Transaction]):
 
     __slots__ = ('_transactions', '_underlying')
 

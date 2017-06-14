@@ -7,7 +7,7 @@ from copy import deepcopy
 from requests import HTTPError, post
 
 from ._demo_account_type import DemoAccountType
-from ._transaction_collection import TransactionCollection
+from ._transaction_list import TransactionList
 
 
 class Account(object):
@@ -39,7 +39,7 @@ class Account(object):
         self._uid = message['uid']
         self._token = message['token']
 
-    def get_all_transactions(self) -> TransactionCollection:
+    def get_all_transactions(self) -> TransactionList:
 
         assert self._uid and self._token
 
@@ -58,7 +58,7 @@ class Account(object):
             )
 
         message = self._post(endpoint, parameters)
-        return TransactionCollection(message['transactions'])
+        return TransactionList(message['transactions'])
 
     @staticmethod
     def _post(endpoint: str, parameters: Dict[str, Any], **kwargs) -> Mapping[str, Any]:

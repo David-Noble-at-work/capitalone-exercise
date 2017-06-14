@@ -69,7 +69,7 @@ class Transaction(object):
 
     # region Methods
 
-    def to_dict(self) -> Mapping[str, Any]:
+    def as_mapping(self) -> Mapping[str, Any]:
         return self._transaction
 
     # endregion

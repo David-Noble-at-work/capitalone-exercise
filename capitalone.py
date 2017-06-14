@@ -93,7 +93,7 @@ if __name__ == '__main__':
     if arguments.ignore_cc_payments:
         report = {
             'income-and-expenses': report,
-            'cc-payments': [removal.to_dict() for removal in transactions.removals]
+            'cc-payments': [removal.as_mapping() for removal in transactions.removals]
         }
 
     json.dump(report, sys.stdout, indent=2)
