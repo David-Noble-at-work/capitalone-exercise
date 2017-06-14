@@ -15,4 +15,7 @@ class IncomeAndExpense(namedtuple('IncomeAndExpense', ('spent', 'income'))):
         strings.
 
         """
-        return {'spent': f'${Decimal(-self.spent // 100) / 100}', 'income': f'${Decimal(self.income // 100) / 100}'}
+        return {
+            'spent': f'${format(Decimal(-self.spent // 100) / 100, ".2f")}',
+            'income': f'${format(Decimal(self.income // 100) / 100, ".2f")}'
+        }
