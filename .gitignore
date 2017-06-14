@@ -1,6 +1,9 @@
 .idea/
 Report*.json
+<<<<<<< HEAD
 Transaction*.json
+=======
+>>>>>>> 6c3feab59e6eb9ceaec689d22edb32df2b037cc6
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

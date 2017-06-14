@@ -14,26 +14,34 @@ python3.6 capitalone.py --help
 python3.6 capitalone.py --email interview@levelmoney.com --password password2
 ```
 
+<<<<<<< HEAD
 *Output:* 
 
 A single JSON document of income and expenses as documented in `Coding-exercise-instructions.md`.
 
+=======
+>>>>>>> 6c3feab59e6eb9ceaec689d22edb32df2b037cc6
 **Example 2:**
 ```bash
 # Produce income and expense report that excludes expenses (or--theoretically--income earned) on donuts
 python3.6 capitalone.py --email interview@levelmoney.com --password password2 --ignore-donuts
 ```
+<<<<<<< HEAD
 
 *Output:* 
 
 A single JSON document of income and expenses as documented in `Coding-exercise-instructions.md`.
 
+=======
+
+>>>>>>> 6c3feab59e6eb9ceaec689d22edb32df2b037cc6
 **Example 3:**
 ```bash
 # Produce income and expense report that excludes credit card payments
 python3.6 capitalone.py --email interview@levelmoney.com --password password2 --ignore-cc-payments
 ```
 
+<<<<<<< HEAD
 *Output:* 
 
 A single JSON document with two fields: `income-and-expenses` and `cc-payments`. The `income-and-expenses` field
@@ -52,6 +60,8 @@ A single JSON document with two fields: `income-and-expenses` and `cc-payments`.
 is formatted as documented in `Coding-exercise-instructions.md`. The `cc-payments` field lists all credit card
 transactions that were ignored.
 
+=======
+>>>>>>> 6c3feab59e6eb9ceaec689d22edb32df2b037cc6
 ## Requirements
 
 This module requires Python 3.6 and these packages:

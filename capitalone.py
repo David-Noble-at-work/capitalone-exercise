@@ -54,6 +54,7 @@ if __name__ == '__main__':
     account.login(arguments.email, arguments.password)
 
     transactions = account.get_all_transactions()
+<<<<<<< HEAD
 
     # Strategy: Construct a processing pipeline composed of filters over a sequence of transactions and then--at the
     # end--report on them. In production code we'd formalize the concept of a processing pipeline which could execute
@@ -95,5 +96,13 @@ if __name__ == '__main__':
             'income-and-expenses': report,
             'cc-payments': [removal.to_dict() for removal in transactions.removals]
         }
+=======
+>>>>>>> 6c3feab59e6eb9ceaec689d22edb32df2b037cc6
 
+    # Strategy: compose filters over a sequence of transactions and then report on them
+
+    if arguments.ignore_donuts:
+        transactions = filter(lambda t: t.merchant not in ['Krispy Kreme Donuts', 'DUNKIN #336784'], transactions)
+
+    report = capitalone.compute_income_and_expenses(transactions)
     json.dump(report, sys.stdout, indent=2)
