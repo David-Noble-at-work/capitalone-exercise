@@ -1,3 +1,5 @@
+# Copyright © David Noble. All Rights Reserved.
+
 from ._account import Account, DemoAccountType
 from ._filters import time_window
 from ._income_and_expense import IncomeAndExpense

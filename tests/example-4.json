@@ -1,0 +1,714 @@
+{
+  "income-and-expenses": {
+    "2014-10": {
+      "spent": "$1578.13",
+      "income": "$5137.94"
+    },
+    "2014-11": {
+      "spent": "$4640.59",
+      "income": "$3430.06"
+    },
+    "2014-12": {
+      "spent": "$4509.78",
+      "income": "$5141.95"
+    },
+    "2015-01": {
+      "spent": "$3487.94",
+      "income": "$3406.53"
+    },
+    "2015-02": {
+      "spent": "$5184.93",
+      "income": "$3417.19"
+    },
+    "2015-03": {
+      "spent": "$3039.52",
+      "income": "$3423.28"
+    },
+    "2015-04": {
+      "spent": "$3230.36",
+      "income": "$5141.21"
+    },
+    "2015-05": {
+      "spent": "$3036.33",
+      "income": "$5144.42"
+    },
+    "2015-06": {
+      "spent": "$3603.11",
+      "income": "$3918.23"
+    },
+    "2015-07": {
+      "spent": "$4606.76",
+      "income": "$5087.75"
+    },
+    "2015-08": {
+      "spent": "$4545.11",
+      "income": "$5082.71"
+    },
+    "2015-09": {
+      "spent": "$4055.19",
+      "income": "$5100.95"
+    },
+    "2015-10": {
+      "spent": "$4576.41",
+      "income": "$1717.43"
+    },
+    "2015-11": {
+      "spent": "$4143.96",
+      "income": "$6916.66"
+    },
+    "2015-12": {
+      "spent": "$5094.66",
+      "income": "$1725.57"
+    },
+    "2016-01": {
+      "spent": "$4348.2",
+      "income": "$3966.33"
+    },
+    "2016-02": {
+      "spent": "$3876.95",
+      "income": "$3451.38"
+    },
+    "2016-03": {
+      "spent": "$5785.44",
+      "income": "$5068.06"
+    },
+    "2016-04": {
+      "spent": "$4744.65",
+      "income": "$3397.95"
+    },
+    "2016-05": {
+      "spent": "$3531.79",
+      "income": "$5204.52"
+    },
+    "2016-06": {
+      "spent": "$3275.98",
+      "income": "$5637.45"
+    },
+    "2016-07": {
+      "spent": "$3243.4",
+      "income": "$5122.48"
+    },
+    "2016-08": {
+      "spent": "$4403.76",
+      "income": "$5101.8"
+    },
+    "2016-09": {
+      "spent": "$4769.97",
+      "income": "$1710.18"
+    },
+    "2016-10": {
+      "spent": "$4836.43",
+      "income": "$3380.92"
+    },
+    "2016-11": {
+      "spent": "$8173.86",
+      "income": "$5157.37"
+    },
+    "2016-12": {
+      "spent": "$4533.99",
+      "income": "$3446.8"
+    },
+    "2017-01": {
+      "spent": "$6560.23",
+      "income": "$3486.48"
+    },
+    "2017-02": {
+      "spent": "$4007.16",
+      "income": "$3415.36"
+    },
+    "2017-03": {
+      "spent": "$4988.34",
+      "income": "$3470.61"
+    },
+    "2017-04": {
+      "spent": "$5176.12",
+      "income": "$1710.84"
+    },
+    "2017-05": {
+      "spent": "$2642.04",
+      "income": "$5144.3"
+    },
+    "2017-06": {
+      "spent": "$1708.18",
+      "income": "$3382.34"
+    },
+    "average": {
+      "spent": "$3498.48",
+      "income": "$3376.17"
+    }
+  },
+  "cc-payments": [
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "aggregation-time": 1415041080000,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1415042820000,
+      "transaction-id": "1415042820000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2014-11-03T18:58:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "aggregation-time": 1415048280000,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1415193660000,
+      "transaction-id": "1415193660000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "CC Payment",
+      "transaction-time": "2014-11-03T20:58:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "aggregation-time": 1417582920000,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1417643220000,
+      "transaction-id": "1417643220000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2014-12-03T05:02:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "aggregation-time": 1417592640000,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1417724460000,
+      "transaction-id": "1417724460000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "CC Payment",
+      "transaction-time": "2014-12-03T07:44:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "aggregation-time": 1420202040000,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1420296360000,
+      "transaction-id": "1420296360000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "CC Payment",
+      "transaction-time": "2015-01-02T12:34:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "aggregation-time": 1420208700000,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1420307220000,
+      "transaction-id": "1420307220000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2015-01-02T14:25:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "aggregation-time": 1422913440000,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1423073820000,
+      "transaction-id": "1423073820000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "CC Payment",
+      "transaction-time": "2015-02-02T21:44:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "aggregation-time": 1422941280000,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1423001100000,
+      "transaction-id": "1423001100000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2015-02-03T05:28:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "aggregation-time": 1425362280000,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1425608100000,
+      "transaction-id": "1425608100000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2015-03-03T05:58:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "aggregation-time": 1425367320000,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1425442800000,
+      "transaction-id": "1425442800000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "CC Payment",
+      "transaction-time": "2015-03-03T07:22:00.000Z"
+    },
+    {
+      "amount": 0,
+      "is-pending": false,
+      "aggregation-time": 1425722400000,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1425722400000,
+      "transaction-id": "1425722400000",
+      "raw-merchant": "Blah",
+      "categorization": "Unknown",
+      "merchant": "Blah",
+      "transaction-time": "2015-03-07T10:00:00.000Z"
+    },
+    {
+      "amount": 0,
+      "is-pending": false,
+      "aggregation-time": 1425722400000,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1425722400000,
+      "transaction-id": "1425722400000",
+      "raw-merchant": "Blah",
+      "categorization": "Unknown",
+      "merchant": "Blah",
+      "transaction-time": "2015-03-07T10:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "aggregation-time": 1427991480000,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1428088140000,
+      "transaction-id": "1428088140000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "CC Payment",
+      "transaction-time": "2015-04-02T16:18:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "aggregation-time": 1428015900000,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1428130140000,
+      "transaction-id": "1428130140000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2015-04-02T23:05:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "aggregation-time": 1433289600000,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1433497680000,
+      "transaction-id": "1433497680000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2015-06-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "aggregation-time": 1433289600000,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1433396340000,
+      "transaction-id": "1433396340000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "CC Payment",
+      "transaction-time": "2015-06-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "aggregation-time": 1435881600000,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1435943640000,
+      "transaction-id": "1435943640000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "CC Payment",
+      "transaction-time": "2015-07-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "aggregation-time": 1435881600000,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1436268120000,
+      "transaction-id": "1436268120000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2015-07-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "aggregation-time": 1441238400000,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1441313880000,
+      "transaction-id": "1441313880000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2015-09-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "aggregation-time": 1441238400000,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1441313160000,
+      "transaction-id": "1441313160000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "CC Payment",
+      "transaction-time": "2015-09-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "aggregation-time": 1446508800000,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1446735360000,
+      "transaction-id": "1446735360000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "CC Payment",
+      "transaction-time": "2015-11-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "aggregation-time": 1446508800000,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1446733980000,
+      "transaction-id": "1446733980000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Unknown",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2015-11-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CC PAYMENT",
+      "aggregation-time": 1459727183414,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1459913640000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1459913640000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "CC Payment",
+      "transaction-time": "2016-04-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CREDIT CARD PAYMENT",
+      "aggregation-time": 1459727183414,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1459724580000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1459724580000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2016-04-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CC PAYMENT",
+      "aggregation-time": 1462317800505,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1462247280000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1462247280000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "CC Payment",
+      "transaction-time": "2016-05-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CREDIT CARD PAYMENT",
+      "aggregation-time": 1462317800505,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1462516800000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1462516800000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2016-05-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CREDIT CARD PAYMENT",
+      "aggregation-time": 1465019832998,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1465220520000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1465220520000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2016-06-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CC PAYMENT",
+      "aggregation-time": 1465019832998,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1464928560000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1464928560000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "CC Payment",
+      "transaction-time": "2016-06-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CC PAYMENT",
+      "aggregation-time": 1467608652750,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1467785760000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1467785760000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "CC Payment",
+      "transaction-time": "2016-07-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CREDIT CARD PAYMENT",
+      "aggregation-time": 1467608652750,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1467622920000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1467622920000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2016-07-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CREDIT CARD PAYMENT",
+      "aggregation-time": 1470200776232,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1470195540000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1470195540000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2016-08-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CC PAYMENT",
+      "aggregation-time": 1470200776232,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1470424620000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1470424620000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "CC Payment",
+      "transaction-time": "2016-08-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CREDIT CARD PAYMENT",
+      "aggregation-time": 1472901840066,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1472951400000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1472951400000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2016-09-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CC PAYMENT",
+      "aggregation-time": 1472901840066,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1472876340000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1472876340000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "CC Payment",
+      "transaction-time": "2016-09-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CREDIT CARD PAYMENT",
+      "aggregation-time": 1475493617561,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1475459040000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1475459040000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2016-10-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CC PAYMENT",
+      "aggregation-time": 1475493617561,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1475795040000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1475795040000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "CC Payment",
+      "transaction-time": "2016-10-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CREDIT CARD PAYMENT",
+      "aggregation-time": 1480787834516,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1480810080000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1480810080000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2016-12-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CC PAYMENT",
+      "aggregation-time": 1480787834516,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1480790460000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1480790460000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "CC Payment",
+      "transaction-time": "2016-12-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CC PAYMENT",
+      "aggregation-time": 1491262903056,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1491306840000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1491306840000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "CC Payment",
+      "transaction-time": "2017-04-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CREDIT CARD PAYMENT",
+      "aggregation-time": 1491262903056,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1491306780000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1491306780000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2017-04-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CC PAYMENT",
+      "aggregation-time": 1493855390315,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1493926560000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1493926560000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "CC Payment",
+      "transaction-time": "2017-05-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CREDIT CARD PAYMENT",
+      "aggregation-time": 1493855390315,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1494239880000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1494239880000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2017-05-03T00:00:00.000Z"
+    },
+    {
+      "amount": -5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CC PAYMENT",
+      "aggregation-time": 1496552643209,
+      "account-id": "nonce:comfy-checking/hdhehe",
+      "clear-date": 1496552940000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1496552940000",
+      "raw-merchant": "CC PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "CC Payment",
+      "transaction-time": "2017-06-03T00:00:00.000Z"
+    },
+    {
+      "amount": 5194500,
+      "is-pending": false,
+      "payee-name-only-for-testing": "CREDIT CARD PAYMENT",
+      "aggregation-time": 1496552643209,
+      "account-id": "nonce:comfy-cc/hdhehe",
+      "clear-date": 1496467860000,
+      "memo-only-for-testing": "Example Memo",
+      "transaction-id": "1496467860000",
+      "raw-merchant": "CREDIT CARD PAYMENT",
+      "categorization": "Credit Card Payment",
+      "merchant": "Credit Card Payment",
+      "transaction-time": "2017-06-03T00:00:00.000Z"
+    }
+  ]
+}
