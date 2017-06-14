@@ -6,10 +6,11 @@ from datetime import datetime
 
 class Transaction(object):
 
-    __slots__ = ('_transaction',)
+    __slots__ = ('_transaction', '_transaction_time')
 
     def __init__(self, transaction: Mapping[str, Any]) -> None:
         self._transaction = transaction
+        self._transaction_time = None
 
     def __repr__(self):
         return repr(self._transaction)
@@ -57,15 +58,16 @@ class Transaction(object):
 
     @property
     def transaction_time(self):
-        return self._transaction['transaction-time']
+        value = self._transaction_time
+        if value is None:
+            value = self._transaction_time = datetime.strptime(
+                self._transaction['transaction-time'], '%Y-%m-%dT%H:%M:%S.%fZ'
+            )
+        return value
 
     # endregion
 
     # region Methods
-
-    @staticmethod
-    def to_datetime(value: str) -> datetime:
-        return datetime.strptime(value, '%Y-%m-%dT%H:%M:%S.%fZ')
 
     def to_dict(self) -> Mapping[str, Any]:
         return self._transaction

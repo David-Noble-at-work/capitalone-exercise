@@ -53,8 +53,8 @@ class TimeWindow(Iterable[Transaction]):
             self._removals = removals
             return
 
-        start_time = Transaction.to_datetime(start.transaction_time)
-        end_time = Transaction.to_datetime(end.transaction_time)
+        start_time = start.transaction_time
+        end_time = end.transaction_time
         more = True
 
         # Process transaction stream
@@ -69,7 +69,7 @@ class TimeWindow(Iterable[Transaction]):
                 more = False
 
                 for end in transactions:
-                    end_time = Transaction.to_datetime(end.transaction_time)
+                    end_time = end.transaction_time
                     if end_time - start_time > self._interval:
                         more = True
                         break
@@ -85,7 +85,7 @@ class TimeWindow(Iterable[Transaction]):
                     break
                 start = end
 
-            start_time = Transaction.to_datetime(start.transaction_time)
+            start_time = start.transaction_time
 
         self._removals = removals
 
