@@ -31,8 +31,7 @@ def compute_income_and_expenses(transactions: Iterator[Transaction]) -> Mapping[
 
     for transaction in transactions:
 
-        transaction_time = transaction.transaction_time
-        period = (transaction_time.year, transaction_time.month)
+        period = (transaction.transaction_time.year, transaction.transaction_time.month)
         amount = transaction.amount
 
         try:
