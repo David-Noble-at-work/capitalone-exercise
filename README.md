@@ -28,9 +28,10 @@ Context(
 ```
 
 Results were checked against the numbers produced by Microsoft Excel for Mac version 15.33 and we saw some differences
-in the second decimal place on averages.
+in the second decimal place on averages. If we were to take this exercise one more step we might reconcile those
+differences taking Capital One's rounding rules into account.
 
-Issue these commands to run the tests against live data:
+Issue these commands to run tests against live data:
 
 ```bash
 cd tests && python3.6 -m pytest .
